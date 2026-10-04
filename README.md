@@ -7,12 +7,12 @@ Akış:
 2. Evet -> kabul ekranı
 3. Tarih seç
 4. Date aktivitesi seç:
-   - Dinner Date
-   - Cute Cafe
-   - Arcade or Fair
-   - Movie Night
-   - Picnic
-   - Sunset Walk
+   - Akşam yemeği buluşması
+   - Sevimli bir kafeye gitmek
+   - Oyun salonu veya lunaparka gitmek
+   - Sinemaya gitmek
+   - Piknik yapmak
+   - Gün batımında yürüyüş yapmak
 5. Tebrik / date kesinleşti ekranı
 
 Hayır butonu:
