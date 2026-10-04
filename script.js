@@ -130,6 +130,7 @@ document.querySelectorAll(".plan-option").forEach(option => {
 });
 
 /* Final */
+/* Final */
 $("#planContinueBtn").addEventListener("click", () => {
   if(!selectedPlan || !dateInput.value) return;
 
@@ -140,8 +141,19 @@ $("#planContinueBtn").addEventListener("click", () => {
     year:"numeric"
   }).format(date);
 
+  const planTranslations = {
+    "Dinner Date": "Akşam yemeği buluşması",
+    "Cute Cafe": "Sevimli bir kafeye gitmek",
+    "Arcade or Fair": "Oyun salonu veya lunaparka gitmek",
+    "Movie Night": "Sinemaya gitmek",
+    "Picnic": "Piknik yapmak",
+    "Sunset Walk": "Gün batımında yürüyüş yapmak"
+  };
+
+  const displayPlan = planTranslations[selectedPlan] || selectedPlan;
+
   $("#summary").innerHTML =
-    `<strong>📅 ${formatted}</strong><br><strong>💗 ${selectedPlan}</strong>`;
+    `<strong>📅 ${formatted}</strong><br><strong>💗 ${displayPlan}</strong>`;
 
   showPage(pages.final);
 });
