@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#fff0f7">
+  <title>Bir Sorum Var 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="app">
+
+    <!-- 01 / DAVET -->
+    <section class="page active" id="questionPage">
+      <div class="invite-wrap">
+        <div class="tiny-heart">♡</div>
+        <h1>benimle date'e<br>çıkar mısın?</h1>
+        <p>birlikte güzel bir gün geçirelim mi? ♡</p>
+
+        <div class="question-actions" id="questionArea">
+          <button class="yes-btn" id="yesBtn">evet ♡</button>
+          <button class="no-btn" id="noBtn">hayır</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 / KABUL -->
+    <section class="page" id="successPage">
+      <div class="glass-card">
+        <div class="emoji-row">🥰 🌷 ✨</div>
+        <h2>yaay, çok<br>sevindim! ♡</h2>
+        <p>
+          bu resmen bir date kararı.<br>
+          şimdi küçük bir plan yapalım.
+        </p>
+        <button class="primary-btn" id="continueBtn">devam et ♡</button>
+        <span class="corner-heart">♡</span>
+      </div>
+    </section>
+
+    <!-- 03 / TARİH -->
+    <section class="page" id="datePage">
+      <div class="glass-card">
+        <div class="emoji-row">🗓️ 🌙 🍰</div>
+        <h2>bir tarih<br>seçelim</h2>
+        <p>ikimize de uygun bir gün seç.</p>
+
+        <div class="date-field">
+          <input id="dateInput" type="date">
+          <span>♡</span>
+        </div>
+
+        <button class="primary-btn" id="dateContinueBtn">devam et ♡</button>
+        <span class="corner-heart">♡</span>
+      </div>
+    </section>
+
+    <!-- 04 / AKTİVİTE -->
+    <section class="page" id="planPage">
+      <div class="glass-card plan-card">
+        <div class="emoji-row">💐 ✨ 🍰</div>
+        <h2>ne yapmak<br>istersın?</h2>
+        <p>date'imiz için birini seç.</p>
+
+        <div class="option-grid" id="planOptions">
+          <button class="plan-option" data-plan="Dinner Date">
+            <span>🍝</span><b>Akşam yemeği buluşması</b>
+          </button>
+          <button class="plan-option" data-plan="Cute Cafe">
+            <span>☕</span><b>Sevimli bir kafeye gitmek</b>
+          </button>
+          <button class="plan-option" data-plan="Arcade or Fair">
+            <span>🎡</span><b>Oyun salonu veya lunaparka gitmek</b>
+          </button>
+          <button class="plan-option" data-plan="Movie Night">
+            <span>🎬</span><b>Sinemaya gitmek</b>
+          </button>
+          <button class="plan-option" data-plan="Picnic">
+            <span>🧺</span><b>Piknik yapmak</b>
+          </button>
+          <button class="plan-option" data-plan="Sunset Walk">
+            <span>🌅</span><b>Gün batımında yürüyüş yapmak</b>
+          </button>
+        </div>
+
+        <button class="primary-btn" id="planContinueBtn" disabled>seç ♡</button>
+      </div>
+    </section>
+
+    <!-- 05 / TEBRİK -->
+    <section class="page" id="finalPage">
+      <div class="glass-card final-card">
+        <div class="floating-hearts">♡ ✦ ♡ ✦ ♡</div>
+        <div class="big-heart">💗</div>
+        <h2>date'imiz<br>kesinleşti!</h2>
+        <p>çok güzel bir seçim yaptın. ♡</p>
+
+        <div class="summary" id="summary"></div>
+
+        <div class="final-message">
+          şimdi tek yapman gereken<br>
+          o günü beklemek. 🥰
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
